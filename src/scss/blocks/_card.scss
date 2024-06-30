@@ -1,0 +1,95 @@
+.card {
+	width: 100%;
+	padding: var(--container-padding);
+	background-color: var(--bg-color-main);
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.progress-container {
+	position: relative;
+	width: 60px;
+  height: 60px;
+}
+
+.progress-ring {
+	transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+	transition: 0.35s stroke-dashoffset;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+}
+
+.progress-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--font-titles);
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.tag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 40px;
+	padding: 0px 10px;
+	max-width: 76px;
+	font-family: var(--font-titles);
+	font-weight: 400;
+	font-size: 12px;
+	color: var(--base-100-white);
+	background-color: var(--bg-color-tags);
+}
+
+.checklists-status {
+	font-family: var(--font-titles);
+	font-weight: 600;
+	font-size: 15px;
+	color: var(--base-100-white);
+}
+
+.checklists-next-task {
+	font-family: var(--font-titles);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: var(--base-100-white);
+}
+
+.checklist-descr {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	font-family: var(--font-titles);
+}
+
+.button {
+	height: 40px;
+	border-radius: 6px;
+	padding: 10px 25px;
+	background-color: var(--base-100-white);
+	font-family: var(--font-titles);
+	font-weight: 400;
+	font-size: 14px;
+	color: #4777ed;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: var(--base-400);
+		color: var(--accent-800);
+	}
+}
